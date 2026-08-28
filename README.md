@@ -103,5 +103,6 @@ Error Message       Hash Password
 registered"         Save to MongoDB
                        ↓
                     Generate JWT
+
                        ↓
                     Response
