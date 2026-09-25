@@ -2,107 +2,120 @@
 
 ## Introduction
 
-Financial literacy is an important skill for students and young adults because they increasingly make decisions related to spending, saving, budgeting, and credit.
+Financial literacy is an important skill for students and young adults because they increasingly make decisions related to spending, saving, budgeting, and credit. However, traditional financial education can be difficult to sustain because it often lacks interaction and continuous engagement. 
 
-However, traditional financial education can be difficult to sustain because it often lacks interaction and continuous engagement.
+This repository contains a full-stack mobile-based financial learning platform that combines financial education with gamification to make learning interactive, accessible, and engaging.
 
-The proposed solution is a mobile-based financial learning platform that combines financial education with gamification to make learning interactive, accessible, and engaging.
+## Features
 
-## Problem Statement
+- **Authentication System:** Secure JWT-based user registration and login.
+- **Learning Modules:** Bite-sized educational content on Budgeting, Saving, Credit, and Investing.
+- **Interactive Quizzes:** Topic-based quizzes to reinforce learning and test financial concepts.
+- **Progress Tracking:** Monitors user performance, completed lessons, and quiz scores.
+- **Gamification Elements:** Earn XP and level up as you complete lessons and quizzes.
 
-Many students and young adults lack practical financial knowledge, resulting in poor budgeting, saving, and credit-related decisions.
+## Tech Stack
 
-The proposed application addresses this problem by providing structured financial education through interactive learning modules, quizzes, challenges, and gamification.
+### Frontend (Mobile App)
+- **Framework:** React Native with Expo & Expo Router
+- **Language:** TypeScript
+- **State & Storage:** React Hooks, AsyncStorage
+- **Styling:** React Native Stylesheets & Expo UI
 
-## Objectives
+### Backend (API)
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JWT (JSON Web Tokens) & bcryptjs for password hashing
 
-- Provide bite-sized financial learning modules.
-- Cover budgeting, saving, credit, and investing.
-- Use quizzes and challenges to reinforce learning.
-- Track the user's learning progress.
-- Calculate a personalized financial literacy score.
-- Use XP, levels, badges, and streaks to encourage regular learning.
-- Provide a leaderboard to increase engagement.
-
-## Financial Learning Areas
-
-The application focuses on the following financial topics:
-
-- Budgeting
-- Saving
-- Credit
-- Investing
-
-## Learning and Assessment
-
-The application is designed to provide:
-
-- Bite-sized financial learning modules.
-- Interactive quizzes.
-- Challenges to reinforce financial concepts.
-- Quiz scores and feedback.
-- Learning progress tracking.
-
-## Gamification
-
-Gamification is used to make financial learning more engaging and interactive.
-
-The planned gamification features include:
-
-- XP
-- Points
-- Levels
-- Badges
-- Streaks
-- Leaderboard
-
-## Progress Monitoring
-
-The application is designed to track:
-
-- Learning completion
-- Quiz performance
-- User progress
-- Financial literacy score
-
-The collected progress information will be used to provide a personalized view of the user's financial learning journey.
-
-## Authentication
-
-The authentication module has currently been implemented to provide secure user access.
-
-### Implemented Features
-
-- User registration
-- User login
-- Duplicate email validation
-- Password hashing using bcrypt
-- JWT-based authentication
-- MongoDB database integration
-- Login error handling
-- Registration error handling
-
-### Registration Flow
+## Project Structure
 
 ```text
-User
- ↓
-Registration Form
- ↓
-Backend API
- ↓
-Check Existing Email
- ↓
- ┌─────────────────────┐
- │                     │
-Already Exists       New User
- │                     │
- ↓                     ↓
-Error Message       Hash Password
-"Email already      ↓
-registered"         Save to MongoDB
-                       ↓
-                    Generate JWT
+PRJ411/
+├── backend/                   # Node.js/Express API
+│   ├── config/                # Database and environment configurations
+│   ├── models/                # Mongoose database schemas
+│   ├── routes/                # Express API routes (auth, lessons, quizzes, progress)
+│   ├── middleware/            # Custom middlewares (e.g., JWT verification)
+│   ├── server.js              # Entry point for the backend
+│   └── package.json           # Backend dependencies
+│
+└── financial-literacy-app/    # React Native (Expo) Frontend
+    ├── src/
+    │   ├── app/               # Expo Router pages and tabs
+    │   ├── components/        # Reusable UI components
+    │   ├── context/           # React Context (Auth State, etc.)
+    │   ├── services/          # API integration services
+    │   └── hooks/             # Custom React hooks
+    ├── package.json           # Frontend dependencies
+    └── app.json               # Expo configuration
+```
 
-                       ↓
-                    Response
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16+)
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas)
+- [Expo CLI](https://expo.dev/)
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/FinancialLiteracyTeam/financial-literacy-app.git
+cd financial-literacy-app
+```
+
+### 2. Backend Setup
+1. Navigate to the `backend` directory (if in a monorepo setup):
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the `backend` directory and add the following variables:
+   ```env
+   PORT=5000
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   ```
+4. Start the backend development server:
+   ```bash
+   npm run dev
+   ```
+   *The server should now be running on http://localhost:5000*
+
+### 3. Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd financial-literacy-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Configure the backend API URL (e.g., in `src/services/api.ts` or a local `.env` file) to point to your backend API (`http://localhost:5000/api`).
+4. Start the Expo app:
+   ```bash
+   npx expo start
+   ```
+5. Use the **Expo Go** app on your physical device to scan the QR code, or press `a` for Android emulator / `i` for iOS simulator.
+
+## API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register a new user
+- `POST /api/auth/login` - Authenticate user & get token
+
+### Lessons
+- `GET /api/lessons` - Get all available learning modules
+
+### Quizzes
+- `GET /api/quizzes/:topicId` - Get quizzes for a specific topic
+- `POST /api/quizzes/submit` - Submit quiz answers and calculate score
+
+### Progress
+- `GET /api/progress/:userId` - Get user's learning progress and XP
+
+---
+*Built for the Financial Literacy Mini Project.*
