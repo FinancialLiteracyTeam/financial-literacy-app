@@ -1,0 +1,62 @@
+{
+  "lesson": "6ab373ba3025fb7339c559cc",
+  "title": "Investing Basics Quiz",
+  "xpReward": 50,
+  "questions": [
+    {
+      "question": "What does investing generally mean?",
+      "options": [
+        "Putting money into assets with the goal of earning a return",
+        "Keeping all money unused forever",
+        "Spending money on daily necessities",
+        "Avoiding all financial decisions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Investing involves putting money into assets with the expectation of generating returns over time."
+    },
+    {
+      "question": "What is investment risk?",
+      "options": [
+        "The possibility that an investment may lose value or produce a lower-than-expected return",
+        "A guarantee that an investment will make money",
+        "The amount of cash in your wallet",
+        "A fixed monthly salary"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Investment risk is the possibility of losing value or receiving a different return than expected."
+    },
+    {
+      "question": "Why can diversification be useful?",
+      "options": [
+        "It can spread investments across different assets",
+        "It guarantees that every investment will make money",
+        "It eliminates all financial risk",
+        "It guarantees a fixed return"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Diversification spreads money across different investments and can reduce dependence on a single investment."
+    },
+    {
+      "question": "What is a stock?",
+      "options": [
+        "A unit representing ownership in a company",
+        "A type of personal loan",
+        "A monthly household bill",
+        "A savings account"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A stock generally represents a share of ownership in a company."
+    },
+    {
+      "question": "Why is a longer investment time horizon often relevant when investing?",
+      "options": [
+        "It can provide more time for investments to grow and for short-term fluctuations to occur",
+        "It guarantees that there will be no losses",
+        "It removes all investment risk",
+        "It guarantees a specific return"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A longer time horizon can give investments more time to potentially grow and can provide more time to withstand short-term market fluctuations."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "lesson": "6ab3730989924dece0df0982",
+  "title": "Budgeting Basics Quiz",
+  "xpReward": 20,
+  "questions": [
+    {
+      "question": "What is a budget?",
+      "options": [
+        "A plan for managing income and expenses",
+        "A type of bank account",
+        "A loan",
+        "A credit card"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A budget is a plan for managing your income and expenses."
+    },
+    {
+      "question": "Which is generally a good budgeting habit?",
+      "options": [
+        "Ignoring your expenses",
+        "Tracking your spending",
+        "Spending all your income",
+        "Avoiding savings"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tracking spending helps you understand where your money goes."
+    },
+    {
+      "question": "Why should you include savings in a budget?",
+      "options": [
+        "To avoid having any money left",
+        "To prepare for future goals and unexpected expenses",
+        "To increase unnecessary spending",
+        "To avoid tracking income"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Saving helps prepare for future goals and unexpected expenses."
+    }
+  ]
+}

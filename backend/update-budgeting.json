@@ -1,0 +1,61 @@
+{
+  "title": "Budgeting Basics Quiz",
+  "xpReward": 50,
+  "questions": [
+    {
+      "question": "What is the main purpose of a personal budget?",
+      "options": [
+        "To track and plan how money is earned and spent",
+        "To avoid earning money",
+        "To increase every expense",
+        "To eliminate the need for saving"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A budget helps you plan income, expenses and savings."
+    },
+    {
+      "question": "Which is generally a good budgeting habit?",
+      "options": [
+        "Spend all income immediately",
+        "Track your expenses regularly",
+        "Ignore small expenses",
+        "Borrow money for every purchase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tracking expenses helps you understand where your money goes."
+    },
+    {
+      "question": "Why should savings be included in a budget?",
+      "options": [
+        "To make expenses unlimited",
+        "To set aside money for future needs and goals",
+        "To avoid tracking income",
+        "To increase unnecessary spending"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Including savings in a budget helps you consistently work toward financial goals."
+    },
+    {
+      "question": "Which expense is usually a fixed expense?",
+      "options": [
+        "Monthly rent",
+        "Movie tickets",
+        "Restaurant meals",
+        "Entertainment"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Rent is commonly a fixed recurring expense, while discretionary spending can vary."
+    },
+    {
+      "question": "If your monthly income is ₹30,000 and your total expenses are ₹24,000, how much remains?",
+      "options": [
+        "₹4,000",
+        "₹5,000",
+        "₹6,000",
+        "₹7,000"
+      ],
+      "correctAnswer": 2,
+      "explanation": "₹30,000 minus ₹24,000 leaves ₹6,000."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "lesson": "6ab373ab3265675b4ce4a7b5",
+  "title": "Credit Basics Quiz",
+  "xpReward": 50,
+  "questions": [
+    {
+      "question": "What is credit?",
+      "options": [
+        "The ability to borrow money or obtain goods with an agreement to repay",
+        "Money that never needs to be repaid",
+        "A type of savings account",
+        "A method of avoiding all financial records"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Credit allows someone to borrow or use money with an obligation to repay according to agreed terms."
+    },
+    {
+      "question": "What does a credit score generally help lenders evaluate?",
+      "options": [
+        "A borrower's credit history and repayment behavior",
+        "A person's height",
+        "The number of items in a house",
+        "A person's daily food expenses"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Credit scores are based on information related to credit behavior and help lenders assess credit risk."
+    },
+    {
+      "question": "What can happen if a borrower repeatedly misses loan or credit payments?",
+      "options": [
+        "It can negatively affect their credit history",
+        "Their debt automatically disappears",
+        "Their income automatically increases",
+        "The lender must give them more money"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Missed payments can negatively affect credit history and may lead to additional consequences."
+    },
+    {
+      "question": "What is interest on a loan?",
+      "options": [
+        "The cost charged for borrowing money",
+        "A discount automatically given on every loan",
+        "The original amount borrowed",
+        "A type of bank account"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Interest is generally the cost of borrowing money."
+    },
+    {
+      "question": "Which practice can help maintain healthy credit behavior?",
+      "options": [
+        "Making repayments on time",
+        "Ignoring repayment dates",
+        "Taking loans without considering repayment ability",
+        "Missing payments intentionally"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Making required repayments on time is an important part of responsible credit management."
+    }
+  ]
+}

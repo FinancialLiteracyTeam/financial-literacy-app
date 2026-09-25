@@ -1,0 +1,62 @@
+{
+  "lesson": "6ab3739a6a705ac4033fd3ae",
+  "title": "Saving Money Quiz",
+  "xpReward": 50,
+  "questions": [
+    {
+      "question": "What does saving money mean?",
+      "options": [
+        "Setting aside part of your income for future use",
+        "Spending all your income immediately",
+        "Borrowing money every month",
+        "Avoiding all purchases"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Saving means keeping part of your available money for future needs or goals."
+    },
+    {
+      "question": "What is an emergency fund mainly used for?",
+      "options": [
+        "Unplanned necessary expenses",
+        "Daily entertainment",
+        "Buying luxury items",
+        "Increasing unnecessary spending"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An emergency fund provides money for unexpected necessary expenses."
+    },
+    {
+      "question": "Which habit can help someone save consistently?",
+      "options": [
+        "Saving only when money is left over by chance",
+        "Setting aside a planned amount regularly",
+        "Spending before checking income",
+        "Ignoring financial goals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Regularly setting aside a planned amount makes saving more consistent."
+    },
+    {
+      "question": "If you save ₹2,000 every month for 6 months, how much will you save?",
+      "options": [
+        "₹8,000",
+        "₹10,000",
+        "₹12,000",
+        "₹14,000"
+      ],
+      "correctAnswer": 2,
+      "explanation": "₹2,000 × 6 months = ₹12,000."
+    },
+    {
+      "question": "What is a financial savings goal?",
+      "options": [
+        "A specific amount of money you plan to save for a purpose",
+        "A requirement to spend all your money",
+        "A type of loan",
+        "A way to avoid tracking money"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A savings goal defines what you want to save for and how much you need."
+    }
+  ]
+}
