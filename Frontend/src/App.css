@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #dff7f0,
+    #e8f1ff
+  );
+
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 430px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.logo-section {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.logo-section h1 {
+  font-size: 32px;
+
+  color: #176b5b;
+
+  margin-bottom: 8px;
+}
+
+.logo-section p {
+  color: #666;
+
+  font-size: 14px;
+}
+
+.form-container h2 {
+  text-align: center;
+
+  margin-bottom: 8px;
+
+  color: #222;
+}
+
+.form-subtitle {
+  text-align: center;
+
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-top: 8px;
+}
+
+input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #176b5b;
+}
+
+form button {
+  margin-top: 18px;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #176b5b;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #125648;
+}
+
+.success-message {
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  background: #e5f7ed;
+
+  color: #167044;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+.error-message {
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  background: #ffe9e9;
+
+  color: #c62828;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+.switch-text {
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+.link-button {
+  border: none;
+
+  background: none;
+
+  color: #176b5b;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-left: 5px;
+}
