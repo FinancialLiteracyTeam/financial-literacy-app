@@ -1,38 +1,14 @@
-const express = require('express');
-const cors = require('cors');
-const authRoutes = require('./routes/authRoutes');
-const lessonRoutes = require('./routes/lessonRoutes');
-const quizRoutes = require('./routes/quizRoutes');
-const progressRoutes = require('./routes/progressRoutes');
-require('dotenv').config();
+require("dotenv").config();
 
+const app = require("./src/app");
+const connectDB = require("./src/db/db");
 
-const connectDB = require('./config/db');
+const PORT = process.env.PORT || 3000;
 
-const app = express();
-
-const PORT = 5000;
-
-// Connect MongoDB
+// Connect to MongoDB
 connectDB();
 
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-app.use('/api/auth', authRoutes);
-app.use('/api/lessons', lessonRoutes);
-app.use('/api/quizzes', quizRoutes);
-app.use('/api/progress', progressRoutes);
-
-// Health check
-app.get('/api/health', (req, res) => {
-  res.json({
-    success: true,
-    message: 'Financial Literacy API is running',
-  });
-});
-
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
